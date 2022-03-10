@@ -72,7 +72,6 @@ router.put("/:id", (req, res) => {
         product.updated = upProduct.updated
           ? (upProduct.updated = true)
           : (product.updated = true);
-        // product.updated = true;
 
         res.json({ msg: "The Product Update ", product });
       } else {
